@@ -1,0 +1,210 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+body{
+    background-color: #272829;
+    position: relative;
+}
+
+
+
+.snake{
+    background-color: #61677a;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    animation-name: snake;
+    animation-duration: 20s;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition: all;
+}
+
+
+
+
+
+.food{
+    background-color: #d8d9da;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+}
+
+
+.food1{
+    margin-left: 600px;
+    margin-top: 20px;
+}
+
+
+.food2{
+    margin-left: 1205px;
+    margin-top: 150px;
+}
+
+
+
+.food3{
+    margin-left: 1100px;
+    margin-top: 140px;
+}
+
+
+
+.food4{
+    margin-left: 1010px;
+    margin-top: -100px;
+}
+
+
+
+.food5{
+    margin-left: 500px;
+    margin-top: -75px;
+}
+
+
+
+.food6{
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+
+
+
+.food7{
+    margin-left: 500px;
+    margin-top: 92px;
+}
+
+
+
+.food8{
+    margin-left: 0px;
+    margin-top: 40px;
+}
+
+
+
+.food9{
+    margin-left: 600px;
+    margin-top: 34px;
+}
+
+
+
+.food10{
+    margin-left: 1100px;
+    margin-top: 40px;
+}
+
+
+
+
+@keyframes snake {
+    
+    0%{
+        left: 0%;
+        top: 0%;
+    }
+
+
+    5%{
+        top: 0px;
+        left: 600px;
+        transform: scaleX(2);
+    }
+
+
+    15%{
+        left: 1200px;
+        top: 0px;
+        /* transform: scaleX(2); */
+    }
+
+
+    20%{
+        left: 1200px;
+        top: 300px;
+        transform: scaleX(3);
+    }
+
+    25%{
+        top: 300px;
+        left: 1000px;
+        transform: scaleX(4);
+    }
+
+    30%{
+        left: 1000px;
+        top: 150px;
+        transform: scaleX(5);
+    }
+
+    45%{
+        top: 150px;
+        left: 0px;
+        transform: scaleX(6);
+    }
+
+    55%{
+        top: 300px;
+        left: 1000px;
+        transform: scaleX(7);
+    }
+
+    70%{
+        top: 300px;
+        left: 0px;
+        transform: scaleX(8);
+    }
+
+    75%{
+        left: 0px;
+        top: 400px;
+        transform: scaleX(9);
+    }
+
+    90%{
+        top: 400px;
+        left: 1000px;
+        transform: scaleX(10);
+    }
+
+    95%{
+        top: 450px;
+        left: 1000px;
+        transform: scaleX(11);
+    }
+
+
+    100%{
+        top: 450px;
+        left: 1200px;
+    }
+}
+
+
+
+.box{
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    color: #ffffff;
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
